@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SushiTech - Cardápio Digital</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #f6f6f6;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #e63946;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 0;
+    }
+    header img {
+      width: 80px;
+      height: 80px;
+    }
+    h1 {
+      margin: 0.5rem 0;
+    }
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+    .menu-section {
+      margin-bottom: 3rem;
+    }
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .menu-item {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+    .menu-item:hover {
+      transform: translateY(-5px);
+    }
+    .menu-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .menu-item-content {
+      padding: 1rem;
+    }
+    .menu-item h3 {
+      margin: 0;
+      color: #e63946;
+    }
+    .price {
+      font-weight: bold;
+      color: #1d3557;
+      margin-top: 0.5rem;
+    }
+    footer {
+      text-align: center;
+      background-color: #1d3557;
+      color: white;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="Logo SushiTech">
+    <h1>🍣 SushiTech - Cardápio Digital</h1>
+    <p>Escaneie o QR Code, escolha seu combo e faça seu pedido direto do celular!</p>
+  </header>
+
+  <main>
+    <section class="menu-section">
+      <h2>Combos Especiais</h2>
+      <div class="menu-grid">
+
+        <div class="menu-item">
+          <img src="https://images.unsplash.com/photo-1562967916-eb82221dfb36" alt="Combo Tradicional">
+          <div class="menu-item-content">
+            <h3>Combo Tradicional</h3>
+            <p>10 sashimis, 8 uramakis e 2 nigiris — o clássico japonês.</p>
+            <p class="price">R$ 59,90</p>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="https://images.unsplash.com/photo-1606851093108-8eab3f7c1f1b" alt="Combo Tech">
+          <div class="menu-item-content">
+            <h3>Combo Tech</h3>
+            <p>15 peças variadas + refrigerante — ideal para os amantes da inovação.</p>
+            <p class="price">R$ 49,90</p>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="https://images.unsplash.com/photo-1553621042-f6e147245754" alt="Combo Premium">
+          <div class="menu-item-content">
+            <h3>Combo Premium</h3>
+            <p>30 peças selecionadas com salmão, atum e camarão — experiência completa.</p>
+            <p class="price">R$ 89,90</p>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="https://images.unsplash.com/photo-1625944230949-7c6a81f8eeb2" alt="Combo Vegano">
+          <div class="menu-item-content">
+            <h3>Combo Vegano</h3>
+            <p>20 peças com legumes frescos, tofu e arroz temperado — sabor sem culpa.</p>
+            <p class="price">R$ 44,90</p>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="https://images.unsplash.com/photo-1553621040-0efdcfb4a43e" alt="Combo Família">
